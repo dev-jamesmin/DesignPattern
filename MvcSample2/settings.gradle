@@ -1,0 +1,2 @@
+rootProject.name = "MvcSample2"
+include ':app'

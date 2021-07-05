@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/round_rectangle_0f02c83c" android:state_selected="true"/>
+    <item android:drawable="@drawable/round_rectangle_stroke_f5f5f5"/>
+
+</selector>

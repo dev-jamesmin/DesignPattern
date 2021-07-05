@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal">
+
+    <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="106dp"
+            android:drawableTop="@drawable/ic_default_exclamation"
+            android:drawablePadding="12dp"
+            android:text="00 내역이 없습니다."
+            android:textColor="#bdbdbd"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"/>
+
+</LinearLayout>

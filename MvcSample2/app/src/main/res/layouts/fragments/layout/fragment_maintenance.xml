@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+            android:id="@+id/account_root_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo_trandi"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/tv_maintenance_title"
+                android:layout_marginBottom="40dp"/>
+
+        <TextView
+                android:id="@+id/tv_maintenance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_maintenance_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:text="@string/string_maintenance_title"
+                android:textColor="#000000"
+                android:textSize="18dp"/>
+
+        <TextView
+                android:id="@+id/tv_maintenance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center"
+                android:text="@string/string_maintenance_content"
+                android:textColor="#000000"
+                android:textSize="14dp"/>
+
+        <TextView
+                android:id="@+id/tv_maintenance_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_maintenance_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:text="@string/string_maintenance_time"
+                android:textColor="#000000"
+                android:textSize="14dp"/>
+
+        <Button
+                android:id="@+id/btn_maintenance_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/round_rectangle_000000_1px"
+                style="@style/Button"
+                android:layout_below="@+id/tv_maintenance_time"
+                android:layout_centerHorizontal="true"
+                android:text="@string/string_maintenance_exit"
+                android:textColor="#000000"
+                android:textSize="16dp"/>
+
+    </RelativeLayout>
+</layout>

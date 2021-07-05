@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llMainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/a_under_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/a_action_bar_icon_back_nor"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="필터"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a_under_line"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llMainTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="판매 상태별"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnSelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:text="판매중"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+                <Button
+                    android:id="@+id/btnSoldout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:text="품절"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+                <Button
+                    android:id="@+id/btnStopSelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:text="판매중지"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a_under_line"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="20dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llStatus">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상품 정렬"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:text="최신순"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:text="판매순"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+                <Button
+                    android:id="@+id/btnHighPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:text="높은가격순"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp">
+
+                <Button
+                    android:id="@+id/btnLowPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:padding="9dp"
+                    android:layout_marginRight="9dp"
+                    android:text="낮은가격순"
+                    android:textColor="@drawable/sel_product_init_tag_blank"
+                    android:textSize="10sp"
+                    android:background="@drawable/sel_round_rectangle_ffffff_000000"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="28dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="9dp"
+                android:text="초기화"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:background="#9e9e9e"/>
+
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="9dp"
+                android:text="적용하기"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:background="#000000"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

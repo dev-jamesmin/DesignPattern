@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_order_mainnav_title">판매 현황</string>
+    <string name="string_order_updated_list">업데이트 된 리스트입니다.</string>
+</resources>

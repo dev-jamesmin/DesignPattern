@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_maintenance_title">셀피 서비스 점검중이에요.</string>
+    <string name="string_maintenance_content">더 좋은 서비스를 제공하고자\n서비스 이용이 잠시 중단돼요.\n이용에 불편을 드린 점 죄송해요.</string>
+    <string name="string_maintenance_time">점검시간 : 끝날때까지</string>
+    <string name="string_maintenance_exit">앱 종료하기</string>
+</resources>

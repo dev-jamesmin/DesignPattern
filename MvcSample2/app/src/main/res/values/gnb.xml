@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_gnb_product">상품관리</string>
+    <string name="string_gnb_orderlist">판매현황</string>
+    <string name="string_gnb_accountmanage">정산관리</string>
+    <string name="string_gnb_taxbill">세금계산서</string>
+    <string name="string_gnb_customercenter">고객센터</string>
+    <string name="string_gnb_delivery">배송 현황</string>
+    <string name="string_gnb_return">반품 현황</string>
+    <string name="string_gnb_settlement">정산 현황</string>
+</resources>

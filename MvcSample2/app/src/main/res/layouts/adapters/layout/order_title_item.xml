@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical">
+
+    <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22:00"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_order_update_check"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvUpdateList"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/viewLine"/>
+
+    <TextView
+            android:id="@+id/tvUpdateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="@string/string_order_updated_list"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintLeft_toRightOf="@id/tvTime"
+            app:layout_constraintTop_toTopOf="@id/tvTime"
+            app:layout_constraintBottom_toBottomOf="@id/tvTime"/>
+
+    <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="14dp"
+            android:background="#e1e1e1"
+            app:layout_constraintTop_toBottomOf="@id/tvTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

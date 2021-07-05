@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="000가 없습니다"
+        android:textColor="#bdbdbd"
+        android:textSize="14sp"
+        android:drawableTop="@drawable/ic_default_exclamation"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvRefresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_rectangle_f5f5f5"
+        android:gravity="center"
+        android:minWidth="152dp"
+        android:minHeight="44dp"
+        android:text="새로고침"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvProductEnrollment"
+        app:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+    <TextView
+        android:id="@+id/tvProductEnrollment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_rectangle_000000"
+        android:gravity="center"
+        android:minWidth="152dp"
+        android:minHeight="44dp"
+        android:text="상품등록"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tvRefresh"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/bottomLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0"
+            android:background="#e1e1e1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llBtnRootProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/sel_ic_gnb_aos_01_product_trandi"/>
+
+            <TextView
+                android:id="@+id/tvRootProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_gnb_product"
+                android:textColor="#000000"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/llBtnRootOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    style="@style/Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/sel_ic_gnb_aos_02_order_trandi"/>
+
+            <TextView
+                    android:id="@+id/tvRootOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_gnb_orderlist"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llBtnRootAccount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    style="@style/Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/sel_ic_gnb_aos_03_calculte_trandi"/>
+
+            <TextView
+                    android:id="@+id/tvRootAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_gnb_accountmanage"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llBtnRootTax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    style="@style/Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/sel_ic_gnb_aos_04_bill_trandi"/>
+
+            <TextView
+                    android:id="@+id/tvRootTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_gnb_taxbill"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/llBtnRootCustomerCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/ivRootCustomerCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/sel_ic_gnb_aos_05_customercenter_trandi"/>
+
+            <TextView
+                    android:id="@+id/tvRootCustomerCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_gnb_customercenter"
+                    android:textColor="#000000"
+                    android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
